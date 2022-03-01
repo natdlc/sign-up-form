@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+}
+
+/* left portion (hero) */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    background-image: url('https://images.unsplash.com/photo-1568992687947-868a62a9f521');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.logo-text-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 110px;
+    margin-top: 150px;
+    color: white;
+}
+
+.logo-text-container::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 110px;
+    background-color: black;
+    opacity: 0.55;
+    z-index: -1;
+}
+
+.logo {
+    width: 60px;
+    transform:rotate(45deg);
+}
+
+a {
+    color: black;
+}
+
+.company-text {
+    font-family: 'Hubballi', cursive;
+    font-size: 90px;
+    letter-spacing: -8px;
+}
+
+.hero-footer-container {
+    margin-bottom: 20px;
+}
+
+/* right portion (form section) */
+form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 150px 0;
+    justify-content: space-between;
+}
+
+.form-desc-container, .input-container, .btn-box {
+    border: 1px solid red;
+    flex: 1 1 auto;
+    padding: 0 250px 0 30px;
+}
+
+.form-desc-container {
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
