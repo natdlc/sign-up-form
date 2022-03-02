@@ -1,3 +1,5 @@
+/* // messy form validation due to style being the main focus of project */
+
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 
 :root {
@@ -192,17 +194,39 @@ button {
 
 /* pseudo classes */
 
-input:user-invalid {
+input:focus:invalid {
     border: 1px solid red;
 }
 
 input:focus:valid {
-    border: 1px solid blue;
+    border: 1px solid green;
 }
 
+input:valid {
+    border: 1px solid green;
+}
+
+input:optional {
+    border: 1px solid rgb(208, 208, 208);
+}
 
 input:focus {
     outline: none;
     border: 1px solid blue;
     box-shadow: 3px 3px 3px var(--shadow);
+}
+
+button:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+    background-color: rgb(136, 92, 10);
+}
+
+button + p > a:hover {
+    cursor: pointer;
+    color: rgb(136, 92, 10);
+}
+
+input:hover {
+    cursor: pointer;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- // messy form validation due to style being the main focus of project -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,28 +37,30 @@
             <div class="input-box-main">
                 <div class="controls-1">
                     <div class="controls">
-                        <label for="first-name">*First Name</label>
-                        <input type="text" id="first-name" name="fname" required>
+                        <label for="fname">*First Name</label>
+                        <input type="text" id="fname" name="fname" required pattern="^\S+">
                     </div>
                     <div class="controls">
-                        <label for="last-name">*Last Name</label>
-                        <input type="text" id="last-name" name="lname" required>
+                        <label for="lname">*Last Name</label>
+                        <input type="text" id="lname" name="lname" required pattern="^\S+">
                     </div>
                 </div>
                 <div class="controls-2">
                     <div class="controls">
                         <label for="email">*Email</label>
                         <input type="email" id="email" name="email" required>
+                        <span></span>
                     </div>
                     <div class="controls">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input placeholder="###-###-####" type="tel" id="phone" name="phone">
                     </div>
                 </div>
                 <div class="controls-3">
                     <div class="controls">
                         <label for="password">*Password</label>
                         <input type="password" id="password" name="password" required>
+                        <span></span>
                     </div>
                     <div class="controls">
                         <label for="password2">*Confirm Password</label>
